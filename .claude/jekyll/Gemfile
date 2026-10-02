@@ -1,0 +1,13 @@
+source "https://rubygems.org"
+
+# Cloud/Ruby >= 3 variant of the project Gemfile. The project's Gemfile.lock pins
+# Bundler 2.0.2, which does not run on Ruby >= 3.2, so it is deliberately not used.
+group :jekyll_plugins do
+  gem "jekyll-paginate"
+end
+
+gem "jekyll", "~> 3.8"
+gem "kramdown-parser-gfm" # kramdown 2 split GFM out; _config.yml relies on the GFM default
+gem "webrick"             # no longer a default gem in Ruby >= 3.0
+gem "bigdecimal"          # default gems only until Ruby 3.4
+gem "base64"

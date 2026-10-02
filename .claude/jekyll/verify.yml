@@ -1,0 +1,3 @@
+# Config override for verification builds (see .claude/scripts/verify-build.sh).
+# _config.yml sets incremental: true, which would rewrite the git-tracked .jekyll-metadata.
+incremental: false
